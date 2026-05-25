@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+
+    <!-- Ícones -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topo">
+
+        <div class="filtro-box">
+            <i class="fa-solid fa-filter"></i>
+
+            <label>Filtrar por Preço:</label>
+
+            <select id="filtro">
+                <option value="todos">Todos os Produtos</option>
+                <option value="ate50">Até R$50</option>
+                <option value="acima50">Acima de R$50</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <!-- PRODUTOS -->
+        <div class="produtos-area">
+
+            <h1>
+                <i class="fa-solid fa-cube"></i>
+                Produtos Disponíveis
+            </h1>
+
+            <div id="listaProdutos" class="lista-produtos"></div>
+
+        </div>
+
+        <!-- CARRINHO -->
+        <div class="carrinho">
+
+            <h2>
+                <i class="fa-solid fa-cart-shopping"></i>
+                Carrinho
+            </h2>
+
+            <div id="listaCarrinho"></div>
+
+            <h3 id="total">
+                Total: R$ 0,00
+            </h3>
+
+            <button id="limparCarrinho">
+                Limpar Carrinho
+            </button>
+
+            <button id = "finalizarCompra">
+                Finalizar Compra
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
